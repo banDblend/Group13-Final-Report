@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    <title>Winter</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap">
+    <link rel="stylesheet" href="navigation.css">
+
+    <style>
+
+    .image {
+        padding-top: 0; 
+    }
+
+    .img-container {
+        position: relative;
+        height: 200px; 
+        overflow: hidden;
+        margin-top: 100px;
+    }
+
+    .img-container img {
+        filter: blur(5px);
+        width: 100%;
+        height: auto;
+    }
+
+    .container {
+        color: white;
+        font-weight: bold;
+        border: 3px solid #f1f1f1;
+        position: absolute;
+        top: 50%; 
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        width: 80%;
+        padding: 20px;
+        text-align: center;
+    }
+  
+    .country-name {
+        padding-top: 30px;
+        padding-left: 60px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .country-content {
+        padding-left: 60px;
+    }
+
+    .country-img {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    
+    }
+
+    .country-img .img-content {
+        width: 20%;
+        margin: 10px;
+        overflow: hidden;
+        position: relative;
+        height: auto;
+        font-size: medium;
+    }
+
+    .img-content img {
+        width: 100%;
+        object-fit: cover;
+        transform: translateX(0);
+        transition: opacity 0.5s ease-out, transform 0.5s ease-out; 
+    }
+
+    .img-content:hover {
+        transform: scale(1.1);
+        transition: transform 0.3s ease-out;
+    }
+
+    .img-content.bigger {
+        transform: scale(1.2);
+    }
+
+    </style>
+
+    </head>
+    <body id="Winter">
+        <header>
+            <!-- Logo and blog title -->
+            <h1>Personal Travel<br>
+            Blog</h1>
+            <!-- Navigation links with dropdown menus -->
+            <nav>
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+            <a href="destination.html" class="dropbtn">Destinations<span class="dropdown-icon">▼</span></a>
+            <div class="dropdown-content">
+                <a href="Korea.html">Korea</a>
+                <a href="Japan.html">Japan</a>
+                <a href="China.html">China</a>
+                <a href="Malaysia.html">Malaysia</a>
+                <a href="Indonesia.html">Indonesia</a>
+                <a href="Thailand.html">Thailand</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#" class="dropbtn">Tourist Attraction<span class="dropdown-icon">▼</span></a>
+            <div class="dropdown-content">
+                <a href="Island.html">Island</a>
+                <a href="Hiking.html">Hiking</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="Season.html" class="dropbtn">Season<span class="dropdown-icon">▼</span></a>
+            <div class="dropdown-content">
+                <a href="Summer.html">Summer</a>
+                <a href="Winter.html">Winter</a>
+                <a href="Fall.html">Fall</a>
+                <a href="Spring.html">Spring</a>
+            </div>
+        </div>
+                <a href="Food.html">Food</a>
+                <a href="AboutUs.html">About Us</a>
+                <a href="ContactUs.html">Contact Us</a>
+            </nav>
+        </header>
+
+        <div class="image">
+            <div class="img-container">
+                <img src="https://www.treehugger.com/thmb/xP8JS7kOFegjwNHTVPjDWWL6QAM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/4-c58eb1fa7d204821938f5f7ae01dcb04.jpg" alt="winter">
+
+                <div class="container">
+                    <h1>WINTER</h1>
+                </div>
+            </div>
+
+            <div class="content">
+
+                <div class="country-name">
+                    <h2>Japan</h2>
+                </div>
+
+                <div class="country-content">
+                    <p>
+                        Japan  is a beautiful country to visit year-round, but winter is an extraordinary time. 
+                        The snow-capped mountains, sparkling city lights, and festive atmosphere make it a magical place to experience the holiday season.
+                    </p>
+                </div>
+
+                <div class="country-img">
+                    
+                    <div class="img-content">
+                        <img src="hokkaido.jpg" width="100%" alt="img1">
+                        <p>
+                            <b>Hokkaido</b> is gorgeous all year round, and many people love exploring its national parks during summer, but the island is especially known for its winter scenery. 
+                        </p>
+                    </div>
+                    
+                    <div class="img-content">
+                        <img src="ashikigawa.jpg" width="100%" alt="img2">
+                        <p>
+                            <b>Ashikaga Flower Park</b> in Tochigi Prefecture holds one of the largest light festivals in the country from October to February.
+                        </p>
+                    </div>
+
+                    <div class="img-content">
+                        <img src="shirakawa.jpg" width="100%" alt="img3">
+                        <p>
+                            <b>Shirakawa-go and Gokayama Gassho Zukuri Houses</b> which are the ancient farmhouses of Gifu and Toyama Prefectures are need on your list of must visit places in Japan.
+                        </p>
+                    </div>
+                    
+                    <div class="img-content">
+                        <img src="jikogudani.jpg" width="100%" alt="img4">
+                        <p>
+                            The <b>Jigokudani Monkey Park</b> maintains natural hot springs that attract wild monkeys to warm up in during winter.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="content">
+
+                <div class="country-name">
+                    <h2>Korea</h2>
+                </div>
+
+                <div class="country-content">
+                    <p>
+                        One of the best times of the year to visit South Korea is in the winter. 
+                        When the snow blankets the city, the whole town becomes a mini winter wonderland.
+                    </p>
+                </div>
+
+                <div class="country-img">
+                    
+                    <div class="img-content">
+                        <img src="ski Resort.jpg" width="100%" alt="img1">
+                        <p>
+                            The <b>Jisan Ski Resort</b> is the perfect getaway for winter in Korea. 
+                            Whether you’re looking to spend a day shredding down the slopes or just looking to explore the area, we’ve got you covered.
+                        </p>
+                    </div>
+                    
+                    <div class="img-content">
+                        <img src="hanbok.jpg" width="100%" alt="img2">
+                        <p>
+                            Head to <b>Oneday Hanbok rental</b> in the Jung-gu district of Seoul, where a team of friendly staff is waiting to assist you. 
+                            Choose from various designs and accessories to find the best look that suits your style.
+                        </p>
+                    </div>
+
+                    <div class="img-content">
+                        <img src="nami island.jpg" width="100%" alt="img3">
+                        <p>
+                            Visit <b>Nami Island</b> in winter with its tree-lined avenues covered in white snow. 
+                            Stroll along the lanes of trees hand-in-hand with partner and recreate some famous Korean “Winter Sonata” drama scenes.
+                        </p>
+                    </div>
+                    
+                    <div class="img-content">
+                        <img src="pohang.jpg" width="100%" alt="img4">
+                        <p>
+                            Discover more attractions in South Korea when winter, such as the <b>Pohang Roller Coaster Space Walk</b>.
+                            it found in Hwanho Park, it has a great view of Pohang City and Yeongildae Beach in the distance.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="content">
+
+                <div class="country-name">
+                    <h2>Thailand</h2>
+                </div>
+
+                <div class="country-content">
+                    <p>
+                        Winter is the best climate to visit Thailand. 
+                        The air is less humid and the sun doesn’t shine down so harshly that you are drenched in sweat within minutes. 
+                        Evenings are pleasant with a cool breeze blowing in from the sea.
+                    </p>
+                </div>
+
+                <div class="country-img">
+                    
+                    <div class="img-content">
+                        <img src="chiang mai.jpg" width="100%" alt="img1">
+                        <p>
+                            During December to February, the whole space of Northern Hemisphere, and the city of <b>Chiang Mai</b>, replete with pink wild cherry blossoms. 
+                            So, if you visit this city during winter you will be amazed to see the sunflower fields in full bloom.
+                        </p>
+                    </div>
+                    
+                    <div class="img-content">
+                        <img src="bangpu.jpg" width="100%" alt="img2">
+                        <p>
+                            Thailand is tropical country so, during winter is the ideal time to reach the <b>Bangpu Recreation Center</b> in Samut Prakan, where the tourists can get ample scope to watch the group of migratory birds.
+                        </p>
+                    </div>
+
+                    <div class="img-content">
+                        <img src="tri trang.jpg" width="100%" alt="img3">
+                        <p>
+                            <b>Muen-Ngoen Road Tri Trang Beach</b> is what you always dreamt of calm and tranquil, delved into the serene abundance. 
+                            Strolling by the beach or just laying back and relax is the best thing that you could do.
+                        </p>
+                    </div>
+                    
+                    <div class="img-content">
+                        <img src="hike.jpg" width="100%" alt="img4">
+                        <p>
+                            There are quite some places to visit in winter in Thailand like <b>Doi Inthanon</b> in Chiang Mai and Mae Ya Waterfall, which offer significant hiking opportunities.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="content">
+
+                <div class="country-name">
+                    <h2>Malaysia</h2>
+                </div>
+
+                <div class="country-content">
+                    <p>
+                        Some winter holiday travelers prefer to enjoy their time in warm climate without worrying too much about cold winters. 
+                        Malaysia is one of the most ideal winter getaways to escape from thick snow and freezing winds. 
+                    </p>
+                </div>
+
+                <div class="country-img">
+                    
+                    <div class="img-content">
+                        <img src="islandMY.jpg" width="100%" alt="img1">
+                        <p>
+                            Escape from the thick snow and chilly weather to enjoy the sunny skies, sandy beaches and sea breezes at Malaysia’s tropical islands such as Pangkor Island and Perhentian Island.
+
+                        </p>
+                    </div>
+                    
+                    <div class="img-content">
+                        <img src="perhentian island.jpg" width="100%" alt="img2">
+                        <p>
+                            <b>Perhentian Island</b> is one of the ideal places to explore Malaysia’s beautiful coral reefs. With its tropical weather and warm seas, you don’t have to worry about freezing while diving into seas.
+                        </p>
+                    </div>
+
+                    <div class="img-content">
+                        <img src="bako national park.jpg" width="100%" alt="img3">
+                        <p>
+                            Explore the rain forest’s wildlife at <b>Bako National Park</b> and <b>Kinabalu Park</b>.
+                            You might meet some animal friends during your exploration.
+                        </p>
+                    </div>
+                    
+                    <div class="img-content">
+                        <img src="waterfall.jpg" width="100%" alt="img4">
+                        <p>
+                            Challenge yourself and discover Malaysia’s limestone caves. 
+                            Cave and river tours are provided to assist you during exploration such as <b>Gua tempurung</b>, it has three large chambers with amazing rock formations. 
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="content">
+
+                <div class="country-name">
+                    <h2>China</h2>
+                </div>
+
+                <div class="country-content">
+                    <p>
+                        As winter approaches, it’s time to embrace the amazing snow and ice wonders in the north or savor forever warm in the south in China. Happy Chinese New Year also comes. 
+                        Such grand and traditional festival will add more authenticity to a China vacation.
+                    </p>
+                </div>
+
+                <div class="country-img">
+                    
+                    <div class="img-content">
+                        <img src="harbin.jpg" width="100%" alt="img1">
+                        <p>
+                            <b>Harbin</b> the Ice City in China, belongs to one of the best winter getaways for world friends globally famous for its spectacular annual World Ice and Snow Festival gala during winter.
+                        </p>
+                    </div>
+                    
+                    <div class="img-content">
+                        <img src="huangshan.jpg" width="100%" alt="img2">
+                        <p>
+                            <b>Huangshan Mountain</b> (Yellow Mountain), is widely believed as the most beautiful mountain in China.
+                            It features the “Four Wonders” beautifully-shaped pines trees, fantastic rock peaks, sea of clouds and hot springs. 
+                        </p>
+                    </div>
+
+                    <div class="img-content">
+                        <img src="emei.jpg" width="100%" alt="img3">
+                        <p>
+                            <b>Mount Emei</b> near Chengdu, China is the mountain combines authentic Buddhist culture and diverse nature with its up to 28 temples and monasteries that dot in the tranquil mountain sides from foot to the summit.
+                        </p>
+                    </div>
+                    
+                    <div class="img-content">
+                        <img src="xiling.jpg" width="100%" alt="img4">
+                        <p>
+                            <b>Xiling Snow Mountain</b> boasting the largest-scaled alpine ski resort (Xiling Ski Resort) in whole Southern China is the joyous “Winter Wonderland” if you want to have fun in the snow world in the Southern region.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="content">
+
+                <div class="country-name">
+                    <h2>Indonesia</h2>
+                </div>
+
+                <div class="country-content">
+                    <p>
+                        Indonesia is the asia Indonesia has a tropical climate. 
+                        Hence, there is no winter in Indonesia in the strictest sense, but one could consider the wet period, between December and March, as winter.
+                </div>
+
+                <div class="country-img">
+                    
+                    <div class="img-content">
+                        <img src="bali.jpg" width="100%" alt="img1">
+                        <p>
+                            <b>Bali tour</b> should be on your list. This island is known all over the world for its stunning landscapes, temples, and monuments.
+                        </p>
+                    </div>
+                    
+                    <div class="img-content">
+                        <img src="raja ampat.jpg" width="100%" alt="img2">
+                        <p>
+                            <b>Raja Ampat</b> is one of the most stunning archipelagoes in Indonesia. 
+                            Home to plenty of charming islands, this place is ideal for those wanting to see local wildlife.
+                        </p>
+                    </div>
+
+                    <div class="img-content">
+                        <img src="jakarta.jpg" width="100%" alt="img3">
+                        <p>
+                            The capital of Indonesia which is <b>Jakarta</b>, is the ideal spot for those wanting to explore the urban culture, nightlife and tourist attractions.
+                        </p>
+                    </div>
+                    
+                    <div class="img-content">
+                        <img src="surabaya.jpg" width="100%" alt="img4">
+                        <p>
+                            <b>Surabaya</b> and <b>Bromo National Park</b>. The main city of the eastern part of Java, Surabaya, offers to plunge into the local flavor and enjoy the atmosphere of the Asian historical center. 
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <footer>
+            <div class="footer-text">
+                &copy: 2024 Personal Travel Blog. All rights reserved
+            </div>
+        </footer>
+
+        <script>
+            // Get all elements with the class 'img-content'
+            var imgContents = document.querySelectorAll('.img-content');
+
+            // Add event listeners to each 'img-content' element
+            imgContents.forEach(function (imgContent) {
+
+                // Add 'mouseover' event listener
+                imgContent.addEventListener('mouseover', function () {
+
+                    // Add 'bigger' class on mouseover
+                    imgContent.classList.add('bigger');
+                    });
+
+                    // Add 'mouseout' event listener
+                    imgContent.addEventListener('mouseout', function () {
+
+                        // Remove 'bigger' class on mouseout
+                        imgContent.classList.remove('bigger');
+                    });
+            });
+
+        </script>
+
+    </body>
+</html>
