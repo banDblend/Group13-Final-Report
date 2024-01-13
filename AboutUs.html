@@ -1,0 +1,316 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="AboutUsStyle.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="navigation.css">
+
+    <style>
+         /* Resetting default margin and padding */
+ body {
+    margin: 0;
+    padding: 0;
+    font-family: Josefin Sans, serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: opacity 0.2s ease-in-out;
+    overflow-x: hidden;
+}
+
+/* Styling for the header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: left;
+    z-index: 3; /* Increased z-index to make sure it's above the overlay */
+}
+
+/* Styling for the logo */
+img.logo {
+    max-width: 100px;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Styling for the main heading */
+h1 {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 10px 0 0 0;
+    font-size: 2em;
+}
+
+/* Styling for the navigation */
+nav {
+    float: right;
+    padding: 30px;
+    z-index: 2;
+}
+
+/* Styling for navigation links */
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    z-index: 2;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Styling for navigation links on hover, active, or focus */
+nav a:hover,
+nav a:active,
+nav a:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffcc00;
+}
+
+/* Styling for the dropdown menu */
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+/* Styling for the dropdown content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    top: 100%;
+    left: 0;
+    padding: 5px;
+    background-color: black;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    }
+
+/* Styling for dropdown links */
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Styling for dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+    color: #333;
+}
+
+/* Styling for the dropdown icon */
+.dropdown-icon {
+    margin-left: 5px;
+}
+
+/* Styling for the overlay */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+        /* Styling for the centered heading */
+        .centered-heading {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #fff;
+            font-size: 1.5em;
+            z-index: 4;
+            margin-bottom: 50px;
+        }
+
+        /* Styling for the footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            margin-top: auto;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+		
+		.aboutus {
+            justify-content: center;
+            align-items: flex-start;
+            background-color: white;
+			}
+			
+		.centered-heading1 {
+			top: 120px;
+            text-align: left;
+            color: #fff;
+            font-size: 0.8em;
+            z-index: 4;
+            margin: 0 50px; /* Add margin for better readability */
+            color: black; /* Set text color to black */
+			margin-top: 130px;
+        }
+		
+		 .circle-image {
+            position: absolute;
+            top: 45%;
+            right: 50px;
+            transform: translateY(-50%);
+            border-radius: 50%;
+            overflow: hidden;
+            
+        }
+
+        .circle-image img {
+            width: 280px; /* Set the width of the circular image */
+            height: 280px; /* Set the height of the circular image */
+            object-fit: cover;
+			border-radius: 50%;
+        }
+
+		.image-caption {
+            position: absolute;
+            top: 56%;
+            right: 140px;
+            transform: translateY(-50%);
+            text-align: center;
+            color: #333;
+            font-size: 14px;
+            margin-top: 90px;
+        }
+    
+		.icon {
+            font-size: 15px;
+            color: black; 
+            margin-right: 5px;
+        }
+    
+		.icon1 {
+            font-size: 10px;
+            color: black; 
+            margin-right: 5px;
+        }
+		
+    </style>
+
+    <title>Blog</title>
+
+</head>
+<body>
+<div class="aboutus">
+    <!-- Header section -->
+ <header>
+        <!-- Logo and blog title -->
+        <h1>Personal Travel<br>
+		Blog</h1>
+        <!-- Navigation links with dropdown menus -->
+        <nav>
+    <a href="index.html">Home</a>
+    <div class="dropdown">
+        <a href="destination.html" class="dropbtn">Destinations<span class="dropdown-icon">▼</span></a>
+        <div class="dropdown-content">
+            <a href="Korea.html">Korea</a>
+            <a href="Japan.html">Japan</a>
+            <a href="China.html">China</a>
+            <a href="Malaysia.html">Malaysia</a>
+            <a href="Indonesia.html">Indonesia</a>
+            <a href="Thailand.html">Thailand</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <a href="#" class="dropbtn">Tourist Attraction<span class="dropdown-icon">▼</span></a>
+        <div class="dropdown-content">
+            <a href="Island.html">Island</a>
+            <a href="Hiking.html">Hiking</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <a href="Season.html" class="dropbtn">Season<span class="dropdown-icon">▼</span></a>
+        <div class="dropdown-content">
+            <a href="Summer.html">Summer</a>
+            <a href="Winter.html">Winter</a>
+            <a href="Fall.html">Fall</a>
+            <a href="Spring.html">Spring</a>
+        </div>
+    </div>
+            <a href="Food.html">Food</a>
+            <a href="AboutUs.html">About Us</a>
+            <a href="ContactUs.html">Contact Us</a>
+        </nav>
+    </header>
+
+   <!-- Centered heading -->
+    <div class="centered-heading1">
+        <h2>About Us</h2>
+        <p>Welcome to the Personal Travel Blog! We are passionate globetrotters dedicated to exploring the world<br>
+            and sharing our adventures with you. Our travel blog is a testament to the diverse cultures, breathtaking landscapes,<br>
+            and unforgettable experiences that this beautiful planet has to offer.</p>
+
+        <p>With a love for discovery and a desire to inspire others to embark on their own journeys,<br>
+            we curate detailed travel guides, insider tips, and captivating stories. Whether you're a seasoned traveler<br>
+            or planning your first trip, our blog is your companion in making each travel experience extraordinary.</p>
+			
+		<h2>Background</h2>
+        <p><i class="icon1 fas fa-heart"></i>Founded by <i><b>Auliya Isabella</b></i>, a seasoned globetrotter with an insatiable curiosity for the world,<br>
+        This blog started as a personal quest for meaningful experiences and a desire to document the beauty discovered along the way.<br>
+
+        <p><i class="icon1 fas fa-heart"></i>Embarked on my first solo adventure, a transformative journey that ignited a deep love for cultural immersion, breathtaking landscapes,<br>
+        and connecting with people from all walks of life. It was during this expedition that the idea of this blog was born <br>
+        – a platform to chronicle the unique stories, valuable insights, and travel tips gathered from each expedition.</p>
+
+        <p><i class="icon1 fas fa-heart"></i>Driven by a mission to inspire others to embark on their own journeys, I envisioned a space where fellow travelers, <br>
+        both seasoned and novice, could find inspiration, guidance, and a sense of community. It is not just a collection of travel stories; <br>
+        it's a testament to the belief that every journey, no matter how small, has the power to transform and enrich our lives.</p>
+
+        <p><i class="icon1 fas fa-heart"></i>As the blog evolved, so did the community around it. What started as a personal travel diary has now grown into<br>
+        a vibrant hub for like-minded adventurers,
+        explorers, and anyone seeking to infuse their lives with a bit of wanderlust.</p>
+  
+		<p><i class="icon1 fas fa-heart"></i>Join us as we continue to navigate the globe, one destination at a time. <br>
+        Let the stories shared here be a source of inspiration for your own adventures,<br>
+        and may they ignite the flame of wanderlust within you.</p>
+
+        <p><i class="icon1 fas fa-heart"></i>Thank you for being part of our journey – your passport to inspiration, discovery, and the extraordinary awaits.<br>
+        Welcome to Personal Travel Blog, where every adventure begins with a story!</p>
+    </div>
+
+    <!-- Circular image section -->
+    <div class="circle-image">
+        <img src="yunjin.jpg" alt="Profile Image">
+    </div>
+
+    <!-- Image caption with heart icon -->
+    <div class="image-caption">
+        <p><i class="icon fas fa-user-circle"></i>Founder<br>
+        <i><b>Auliya Isabella!</b></i></p>
+    </div>
+	</div>
+  
+    <!-- Footer section -->
+    <footer>
+        &copy; 2024 Personal Travel Blog. All rights reserved.
+    </footer>
+
+	<script src="script.js" defer></script>
+	
+</body>
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap">
+    <link rel="stylesheet" href="navigation.css">
+
+    <title>Foods</title>
+    <style>
+        h2 {
+            font-family: "cursive", "fantasy";
+            text-align: center;
+            width: 100%;
+            margin-top: 50px;
+        }
+
+        h3 {
+            text-align: left;
+            width: 100%;
+            margin-left: 25px;
+            opacity: 1; /* Initial opacity for fade-in effect */
+            animation: fadeIn 1s ease-out forwards; /* Animation duration and timing function */
+        }
+
+        .food-container {
+            display: inline-block;
+            width: 30%;
+            margin: 0 10px 20px;
+            overflow: hidden;
+            border: 2px solid #fff;
+            border-radius: 10px;
+            position: relative;
+            opacity: 1; /* Initial opacity for fade-in effect */
+            animation: fadeIn 1s ease-out forwards; /* Animation duration and timing function */
+        }
+
+        .image-display {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .food-image {
+            width: 100%;
+            height: auto;
+            display: inline-block;
+            margin: 0;
+        }
+
+        .food-name {
+            text-align: center;
+            font-weight: bold;
+            margin-top: 10px; /* Adjust the margin as needed */
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Logo and blog title -->
+        <h1>Personal Travel<br>
+        Blog</h1>
+        <!-- Navigation links with dropdown menus -->
+        <nav>
+    <a href="index.html">Home</a>
+    <div class="dropdown">
+        <a href="destination.html" class="dropbtn">Destinations<span class="dropdown-icon">▼</span></a>
+        <div class="dropdown-content">
+            <a href="Korea.html">Korea</a>
+            <a href="Japan.html">Japan</a>
+            <a href="China.html">China</a>
+            <a href="Malaysia.html">Malaysia</a>
+            <a href="Indonesia.html">Indonesia</a>
+            <a href="Thailand.html">Thailand</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <a href="#" class="dropbtn">Tourist Attraction<span class="dropdown-icon">▼</span></a>
+        <div class="dropdown-content">
+            <a href="Island.html">Island</a>
+            <a href="Hiking.html">Hiking</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <a href="Season.html" class="dropbtn">Season<span class="dropdown-icon">▼</span></a>
+        <div class="dropdown-content">
+            <a class="active" href="Summer.html">Summer</a>
+            <a href="Winter.html">Winter</a>
+            <a href="Fall.html">Fall</a>
+            <a href="Spring.html">Spring</a>
+        </div>
+    </div>
+            <a href="Food.html">Food</a>
+            <a href="AboutUs.html">About Us</a>
+            <a href="ContactUs.html">Contact Us</a>
+        </nav>
+    </header>
+
+<h2>Foods</h2>
+
+<h3>Japan</h3>
+<div class="image-display">
+    <div class="food-container">
+        <img src="unagi.jpg" alt="unagi" class="food-image" style="width:100%; height:230px;">
+        <p class="food-name">Unagi</p>
+    </div>
+    <div class="food-container">
+        <img src="fukagawameshi.jpeg" alt="fukagawameshi" class="food-image" style="width:100%; height:230px;">
+        <p class="food-name">Fukagawa Meshi</p>
+    </div>
+    <div class="food-container">
+        <img src="gyoza.jpg" alt="gyoza" class="food-image" style="width:100%; height:230px;">
+        <p class="food-name">Gyoza</p>
+    </div>
+</div>
+
+<h3>Korea</h3>
+<div class="image-display">
+    <div class="food-container">
+        <img src="kimchi.jpg" alt="kimchi" class="food-image" style="width:100%; height:230px;">
+        <p class="food-name">Kimchi</p>
+    </div>
+    <div class="food-container">
+        <img src="samgyeopsal.jpg" alt="samgyeopsal" class="food-image" style="width:100%; height:230px;">
+        <p class="food-name">Samgyeopsal</p>
+    </div>
+    <div class="food-container">
+        <img src="bibimbap.jpg" alt="bibimbap" class="food-image" style="width:100%; height:230px;">
+        <p class="food-name">Bibimbap</p>
+    </div>
+</div>
+
+<h3>China</h3>
+<div class="image-display">
+    <div class="food-container">
+        <img src="mapotofu.png" alt="mapotofu" class="food-image" style="width:100%; height:230px;">
+        <p class="food-name">Ma Po Tofu</p>
+    </div>
+    <div class="food-container">
+        <img src="kungpaochicken.png" alt="kungpaochicken" class="food-image" style="width:100%; height:230px;">
+        <p class="food-name">Kungpao Chicken</p>
+    </div>
+    <div class="food-container">
+        <img src="dimsum.jpg" alt="dimsum" class="food-image" style="width:100%; height:230px;">
+        <p class="food-name">Dimsum</p>
+    </div>
+</div>
+
+<h3>Indonesia</h3>
+<div class="image-display">
+    <div class="food-container">
+        <img src="asinanbetawi.png" alt="asinanbetawi" class="food-image" style="width:100%; height:230px;">
+        <p class="food-name">Asinan Betawi</p>
+    </div>
+    <div class="food-container">
+        <img src="bakso.png" alt="bakso" class="food-image" style="width:100%; height:230px;">
+        <p class="food-name">Bakso</p>
+    </div>
+    <div class="food-container">
+        <img src="gadogado.png" alt="gadogado" class="food-image" style="width:100%; height:230px;">
+        <p class="food-name">Gado Gado</p>
+    </div>
+</div>
+
+
+<h3>Malaysia</h3>
+<div class="image-display">
+    <div class="food-container">
+        <img src="nasilemak.jpg" alt="nasilemak" class="food-image" style="width:100%; height:230px;">
+        <p class="food-name">Nasi Lemak</p>
+    </div>
+    <div class="food-container">
+        <img src="rendang.jpg" alt="rendang" class="food-image" style="width:100%; height:230px;">
+        <p class="food-name">Rendang</p>
+    </div>
+    <div class="food-container">
+        <img src="roticanai.jpg" alt="roticanai" class="food-image" style="width:100%; height:230px;">
+        <p class="food-name">Roti Canai</p>
+    </div>
+</div>
+
+
+<h3>Thailand</h3>
+<div class="image-display">
+    <div class="food-container">
+        <img src="padkrapao.jpg" alt="padkrapao" class="food-image" style="width:100%; height:230px;">
+        <p class="food-name">Pad Kra Pao</p>
+    </div>
+    <div class="food-container">
+        <img src="somtum.jpg" alt="somtum" class="food-image" style="width:100%; height:230px;">
+        <p class="food-name">Som Tum</p>
+    </div>
+    <div class="food-container">
+        <img src="tomyumgoong.jpg" alt="tomyumgoong" class="food-image" style="width:100%; height:230px;">
+        <p class="food-name">Tom Yum Goong</p>
+    </div>
+</div>
+
+<!-- Footer section -->
+<footer>
+    &copy; 2024 Personal Travel Blog. All rights reserved.
+</footer>
+</body>
+</html>
+

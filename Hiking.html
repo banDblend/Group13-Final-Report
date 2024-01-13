@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hiking</title>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap">
+    	<link rel="stylesheet" href="navigation.css">
+
+        <style>
+
+            .container {
+                margin-top: 150px;
+                
+            }
+
+            .trail-name {
+                margin-top: 30px;
+                margin-left: 50px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            .img-container {
+                margin-top: 30px;
+                margin-left: 30px;
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+            }
+
+            .img-container .trail-img {
+                width: 20%;
+                margin: 10px;
+                overflow: hidden;
+                position: relative;
+                height: auto; 
+            }
+
+            .trail-img img {
+                width: 100%;
+                margin: 5px;
+            }
+
+            .img-desc {
+                margin: 30px 30px;
+                text-align: left;
+                margin-top: 0;
+            }
+
+            .desc {
+                text-align: center;
+                display: flex;
+                justify-content: space-around; 
+                margin-top: 10px;
+            }
+
+            .length .est {
+                width: 40px;
+                margin: 0 5px;
+            }
+
+            .trail-img:hover {
+                transform: scale(1.1);
+                transition: transform 0.3s ease-out;
+            }
+
+            .trail-img.bigger {
+                transform: scale(1.2);
+            }
+        </style>
+
+    </head>
+    <body>
+        <header>
+            <!-- Logo and blog title -->
+            <h1>Personal Travel<br>
+            Blog</h1>
+            <!-- Navigation links with dropdown menus -->
+            <nav>
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+            <a href="destination.html" class="dropbtn">Destinations<span class="dropdown-icon">▼</span></a>
+            <div class="dropdown-content">
+                <a href="Korea.html">Korea</a>
+                <a href="Japan.html">Japan</a>
+                <a href="China.html">China</a>
+                <a href="Malaysia.html">Malaysia</a>
+                <a href="Indonesia.html">Indonesia</a>
+                <a href="Thailand.html">Thailand</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#" class="dropbtn">Tourist Attraction<span class="dropdown-icon">▼</span></a>
+            <div class="dropdown-content">
+                <a href="Island.html">Island</a>
+                <a href="Hiking.html">Hiking</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="Season.html" class="dropbtn">Season<span class="dropdown-icon">▼</span></a>
+            <div class="dropdown-content">
+                <a class="active" href="Summer.html">Summer</a>
+                <a href="Winter.html">Winter</a>
+                <a href="Fall.html">Fall</a>
+                <a href="Spring.html">Spring</a>
+            </div>
+        </div>
+                <a href="Food.html">Food</a>
+                <a href="AboutUs.html">About Us</a>
+                <a href="ContactUs.html">Contact Us</a>
+            </nav>
+        </header>
+
+        <content>
+            <div class="container">
+                <div class="trail-name">
+                    <h2>Mount Kinabalu - Malaysia</h2>
+                </div>
+                <div class="img-container">
+
+                    <div class="trail-img">
+                        <img src="kk1.jpg" width="100%" alt="img1">
+                        
+                    </div>
+    
+                    <div class="trail-img">
+                        <img src="kk2.jpeg" width="100%" alt="img2">
+                        
+                    </div>
+    
+                    <div class="trail-img">
+                        <img src="kk3.jpg" width="100%" alt="img3">
+                        
+                    </div>
+    
+                    <div class="trail-img">
+                        <img src="kk4.jpeg" width="100%" alt="img4">
+                        
+                    </div>
+
+                </div>
+
+                <div class="desc">
+                    <div class="length">
+                        <p>Length: 8.5 kilometre</p>
+                    </div>
+                    <div class="est">
+                        <p>Est: Around 5 hours</p>
+                    </div>
+                </div>
+
+                <div class="img-desc">
+                    <p> It takes around 5 hours to trek from Mount Kinabalu to Panalaban, This is the tallest mountain in South East Asia. 
+                        Hikers must get permits for Sabah Parks & accommodation in Panalaban in advance. 
+                        Starting point is Timpohon Gate and the ending point for hikers is Kinabalu National Park. 
+                        Asia’s first Low Peak Circuit is available here.</p>
+                </div>
+
+                <div class="trail-name">
+                    <h2>Bukit Tabur - Malaysia</h2>
+                </div>
+                <div class="img-container">
+
+                    <div class="trail-img">
+                        <img src="tabur1.jpg" width="100%" alt="img1">
+                        
+                    </div>
+    
+                    <div class="trail-img">
+                        <img src="tabur2.jpg" width="100%" alt="img2">
+                        
+                    </div>
+    
+                    <div class="trail-img">
+                        <img src="tabur3.jpg" width="100%" alt="img3">
+                        
+                    </div>
+    
+                    <div class="trail-img">
+                        <img src="tabur4.jpg" width="100%" alt="img4">
+                        
+                    </div>
+
+                </div>
+
+                <div class="desc">
+                    <div class="length">
+                        <p>Length: 4.1 kilometre</p>
+                    </div>
+                    <div class="est">
+                        <p>Est: 3 hours</p>
+                    </div>
+                </div>
+
+                <div class="img-desc">
+                    <p>Though it takes just about 3 hours to finish the entire trekking trip, hiking at Bukit Tabur is not a walk in the park. 
+                        The trails are tricky and confusing at most of the places. 
+                        West, East & Far East are the 3 primary trails in this mountain. 
+                        Use of professional guide is mandatory if one is new to the area.</p>
+                </div>
+
+                <div class="trail-name">
+                    <h2>Kumano Kodo - Japan</h2>
+                </div>
+                <div class="img-container">
+
+                    <div class="trail-img">
+                        <img src="kumano1.jpg" width="100%" alt="img1">
+                        
+                    </div>
+    
+                    <div class="trail-img">
+                        <img src="kumano2.jpg" width="100%" alt="img2">
+                        
+                    </div>
+    
+                    <div class="trail-img">
+                        <img src="kumano3.jpg" width="100%" alt="img3">
+                        
+                    </div>
+    
+                    <div class="trail-img">
+                        <img src="kumano4.jpg" width="100%" alt="img4">
+                        
+                    </div>
+
+                </div>
+
+                <div class="desc">
+                    <div class="length">
+                        <p>Length: 70 kilometre</p>
+                    </div>
+                    <div class="est">
+                        <p>Est: 4-5 days</p>
+                    </div>
+                </div>
+
+                <div class="img-desc">
+                    <p>Japan is a country rich in tradition, history and natural beauty and the Kumano Kodō hiking trails capture all of that. 
+                        The trail was routinely walked by emperors and samurai who considered it sacred and left behind detailed diaries of their voyages here from Kyoto. 
+                        The Kumano Kodō is not one trail but a network of routes, the most popular of which is the Nakahechi Route, which passes the three grand Shintō shrines of Kumano that would traditionally be visited by pilgrims.</p>
+                </div>
+                
+            </div>
+                
+        </content>
+
+        <footer>
+            <div class="footer-text">
+                &copy: 2024 Personal Travel Blog. All rights reserved
+            </div>
+        </footer>
+
+        <script>
+            // Get all elements with the class 'img-content'
+            var trailImages = document.querySelectorAll('.trail-img');
+
+            // Add event listeners to each 'img-content' element
+            trailImages.forEach(function (trailImage) {
+
+                // Add 'mouseover' event listener
+                trailImages.addEventListener('mouseover', function () {
+
+                    // Add 'bigger' class on mouseover
+                    trailImages.classList.add('bigger');
+                    });
+
+                    // Add 'mouseout' event listener
+                    trailImages.addEventListener('mouseout', function () {
+
+                        // Remove 'bigger' class on mouseout
+                        trailImages.classList.remove('bigger');
+                    });
+            });
+
+        </script>
+
+    </body>
+</html>

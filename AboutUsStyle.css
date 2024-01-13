@@ -1,0 +1,200 @@
+ /* Resetting default margin and padding */
+ body {
+    margin: 0;
+    padding: 0;
+    font-family: Josefin Sans, serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: opacity 0.2s ease-in-out;
+    overflow-x: hidden;
+}
+
+/* Styling for the header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: left;
+    z-index: 3; /* Increased z-index to make sure it's above the overlay */
+}
+
+/* Styling for the logo */
+img.logo {
+    max-width: 100px;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Styling for the main heading */
+h1 {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 10px 0 0 0;
+    font-size: 2em;
+}
+
+/* Styling for the navigation */
+nav {
+    float: right;
+    padding: 30px;
+    z-index: 2;
+}
+
+/* Styling for navigation links */
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    z-index: 2;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Styling for navigation links on hover, active, or focus */
+nav a:hover,
+nav a:active,
+nav a:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffcc00;
+}
+
+/* Styling for the dropdown menu */
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+/* Styling for the dropdown content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    top: 100%;
+    left: 0;
+    padding: 5px;
+    background-color: black;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    }
+
+/* Styling for dropdown links */
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Styling for dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+    color: #333;
+}
+
+/* Styling for the dropdown icon */
+.dropdown-icon {
+    margin-left: 5px;
+}
+
+/* Styling for the overlay */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+        /* Styling for the centered heading */
+        .centered-heading {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #fff;
+            font-size: 1.5em;
+            z-index: 4;
+            margin-bottom: 50px;
+        }
+
+        /* Styling for the footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            margin-top: auto;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+		
+		.aboutus {
+            justify-content: center;
+            align-items: flex-start;
+            background-color: white;
+			}
+			
+		.centered-heading1 {
+			top: 120px;
+            text-align: left;
+            color: #fff;
+            font-size: 0.8em;
+            z-index: 4;
+            margin: 0 50px; /* Add margin for better readability */
+            color: black; /* Set text color to black */
+			margin-top: 130px;
+        }
+		
+		 .circle-image {
+            position: absolute;
+            top: 45%;
+            right: 50px;
+            transform: translateY(-50%);
+            border-radius: 50%;
+            overflow: hidden;
+            
+        }
+
+        .circle-image img {
+            width: 280px; /* Set the width of the circular image */
+            height: 280px; /* Set the height of the circular image */
+            object-fit: cover;
+			border-radius: 50%;
+        }
+
+		.image-caption {
+            position: absolute;
+            top: 56%;
+            right: 140px;
+            transform: translateY(-50%);
+            text-align: center;
+            color: #333;
+            font-size: 14px;
+            margin-top: 90px;
+        }
+    
+		.icon {
+            font-size: 15px;
+            color: black; 
+            margin-right: 5px;
+        }
+    
+		.icon1 {
+            font-size: 10px;
+            color: black; 
+            margin-right: 5px;
+        }
+		
