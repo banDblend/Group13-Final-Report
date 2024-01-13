@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap">
+    <link rel="stylesheet" href="navigation.css">
+    <title>Spring</title>
+
+    <style>
+ body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    min-height: 100vh;
+}
+
+h2 {
+    font-family: cursive, fantasy;
+    text-align: center;
+    width: 100%;
+}
+
+h3 {
+    text-align: left;
+    font-weight: bold;
+    width: 100%;
+    margin-left: 60px; /* Adjust the margin as needed */
+}
+
+.spring-container {
+    text-align: center;
+    width: 100%;
+    margin: 0 10px 20px;
+    overflow: hidden;
+    border: 2px solid #f4f4f4;
+    border-radius: 10px;
+    position: relative;
+    visibility: hidden;
+    animation: slide 1s ease-in-out;
+}
+
+.spring-image {
+    width: 30%;
+    height: auto;
+    display: inline-block;
+    margin: 0;
+}
+
+        .slideanim {
+            visibility: hidden;
+        }
+
+        .slide {
+            animation: slide 1s ease-in-out;
+            visibility: visible;
+        }
+
+        @keyframes slide {
+            0% {
+                opacity: 0;
+                transform: translateY(70%);
+            } 
+            100% {
+                opacity: 1;
+                transform: translateY(0%);
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+         <!-- Logo and blog title -->
+         <h1>Personal Travel<br>
+            Blog</h1>
+            <!-- Navigation links with dropdown menus -->
+            <nav>
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+            <a href="destination.html" class="dropbtn">Destinations<span class="dropdown-icon">▼</span></a>
+            <div class="dropdown-content">
+                <a href="Korea.html">Korea</a>
+                <a href="Japan.html">Japan</a>
+                <a href="China.html">China</a>
+                <a href="Malaysia.html">Malaysia</a>
+                <a href="Indonesia.html">Indonesia</a>
+                <a href="Thailand.html">Thailand</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#" class="dropbtn">Tourist Attraction<span class="dropdown-icon">▼</span></a>
+            <div class="dropdown-content">
+                <a href="Island.html">Island</a>
+                <a href="Hiking.html">Hiking</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="Season.html" class="dropbtn">Season<span class="dropdown-icon">▼</span></a>
+            <div class="dropdown-content">
+                <a href="Summer.html">Summer</a>
+                <a href="Winter.html">Winter</a>
+                <a href="Fall.html">Fall</a>
+                <a href="Spring.html">Spring</a>
+            </div>
+        </div>
+                <a href="Food.html">Food</a>
+                <a href="AboutUs.html">About Us</a>
+                <a href="ContactUs.html">Contact Us</a>
+            </nav>
+    </header>
+
+    <h2>Spring</h2>
+
+<h3>Japan</h3>
+    <div class="spring-container slideanim slide">
+            <img src="springjapan.jpg" alt="springjapan" class="spring-image" style="width:30%; height:230px;">
+            <img src="springjapan2.jpg" alt="springjapan2" class="spring-image" style="width:30%; height:230px;">
+            <img src="springjapan3.jpg" alt="springjapan3" class="spring-image" style="width:30%; height:230px;">
+    </div>
+
+<h3>Korea</h3>
+    <div class="spring-container slideanim slide">
+            <img src="springkorea.jpg" alt="springkorea" class="spring-image" style="width:30%; height:230px;">
+            <img src="springkorea2.jpeg" alt="springkorea2" class="spring-image" style="width:30%; height:230px;">
+            <img src="springkorea3.jpg" alt="springkorea3" class="spring-image" style="width:30%; height:230px;">
+    </div>
+
+<h3>China</h3>
+    <div class="spring-container slideanim slide">
+            <img src="springchina.jpeg" alt="springchina" class="spring-image" style="width:30%; height:230px;">
+            <img src="springchina2.jpg" alt="springchina2" class="spring-image" style="width:30%; height:230px;">
+            <img src="springchina3.jpeg" alt="springchina3" class="spring-image" style="width:30%; height:230px;">
+    </div>
+    <!-- Footer section -->
+    <footer>
+        &copy; 2024 Personal Travel Blog. All rights reserved.
+    </footer>
+    <script>
+        // Add the slide class when the elements become visible
+        document.addEventListener("DOMContentLoaded", function() {
+            var elements = document.querySelectorAll('.slideanim');
+            elements.forEach(function(element) {
+                element.classList.add('slide');
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    <title>Summer</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap">
+    <link rel="stylesheet" href="navigation.css">
+
+    <style>
+    
+    h2 {
+        font-family: "Arial Rounded MT Bold",Arial, sans-serif;
+    }
+
+    .image {
+        padding-top: 0; 
+    }
+
+    .img-container {
+        position: relative;
+        height: 200px; 
+        overflow: hidden;
+        margin-top: 100px;
+    }
+
+    .img-container img {
+        filter: blur(5px);
+        width: 100%;
+        height: auto;
+    }
+
+    .container {
+        color: white;
+        font-weight: bold;
+        border: 3px solid #f1f1f1;
+        position: absolute;
+        top: 50%; 
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        width: 80%;
+        padding: 20px;
+        text-align: center;
+    }
+  
+    .country-name {
+        padding-top: 10px;
+        padding-left: 60px;
+        font-family: Arial, sans-serif, Times, serif;
+    }
+
+    .country-content {
+        padding-left: 60px;
+        font-size: medium;
+    }
+
+    .country-img {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+    
+    }
+
+    .country-img .img-content {
+        width: 20%;
+        margin: 10px;
+        overflow: hidden;
+        position: relative;
+        height: auto; 
+        font-size: medium;
+    }
+
+    .img-content img {
+        width: 100%;
+        object-fit: cover;
+        transform: translateX(0);
+        transition: opacity 0.5s ease-out, transform 0.5s ease-out; 
+    }
+
+    .img-content:hover {
+        transform: scale(1.1);
+        transition: transform 0.3s ease-out;
+    }
+
+    .img-content.bigger {
+        transform: scale(1.2);
+    }
+
+    </style>
+
+    </head>
+    <body id="Summer">
+        <header>
+            <!-- Logo and blog title -->
+            <h1>Personal Travel<br>
+            Blog</h1>
+            <!-- Navigation links with dropdown menus -->
+            <nav>
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+            <a href="destination.html" class="dropbtn">Destinations<span class="dropdown-icon">▼</span></a>
+            <div class="dropdown-content">
+                <a href="Korea.html">Korea</a>
+                <a href="Japan.html">Japan</a>
+                <a href="China.html">China</a>
+                <a href="Malaysia.html">Malaysia</a>
+                <a href="Indonesia.html">Indonesia</a>
+                <a href="Thailand.html">Thailand</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#" class="dropbtn">Tourist Attraction<span class="dropdown-icon">▼</span></a>
+            <div class="dropdown-content">
+                <a href="Island.html">Island</a>
+                <a href="Hiking.html">Hiking</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="Season.html" class="dropbtn">Season<span class="dropdown-icon">▼</span></a>
+            <div class="dropdown-content">
+                <a href="Summer.html">Summer</a>
+                <a href="Winter.html">Winter</a>
+                <a href="Fall.html">Fall</a>
+                <a href="Spring.html">Spring</a>
+            </div>
+        </div>
+                <a href="Food.html">Food</a>
+                <a href="AboutUs.html">About Us</a>
+                <a href="ContactUs.html">Contact Us</a>
+            </nav>
+        </header>
+
+        <div class="image">
+            <div class="img-container">
+                <img src="https://community.thriveglobal.com/wp-content/uploads/2020/06/summer.jpg" alt="summer">
+
+                <div class="container">
+                    <h1>SUMMER</h1>
+                </div>
+            </div>
+
+            <div class="content">
+
+                <div class="country-name">
+                    <h2>Japan</h2>
+                </div>
+
+                <div class="country-content">
+                    <p>
+                        Across much of Japan, the summer is characterized by hot and humid weather. 
+                        Taking refuge from the heat, many locals opt for cooler climates near the ocean or up in the mountains. 
+                        As the heat begins to wane in the evenings, people partake in regional fireworks displays, traditional song and dance, and centuries-old festivals.
+                    </p>
+                </div>
+
+                <div class="country-img">
+                    
+                    <div class="img-content">
+                        <img src="Fuji.jpg" width="100%" alt="img1">
+                        <p>
+                            Every summer, hikers from across the world journey to Japan to embark on a trek up its most iconic peak, <b>Mt. Fuji</b>.
+                        </p>
+                    </div>
+                    
+                    <div class="img-content">
+                        <img src="firework.jpg" width="100%" alt="img2">
+                        <p>
+                            Ranked within the top three best fireworks displays in Japan, the <b>Nagaoka Matsuri</b> in Niigata Prefecture  is a two-day celebration featuring some 20,000 fireworks in a typical year.
+                        </p>
+                    </div>
+
+                    <div class="img-content">
+                        <img src="beach.jpg" width="100%" alt="img3">
+                        <p>
+                            From rugged river valleys nestled in the mountains to white-capped waves washing onto tropical beaches, Japan is full of thrilling water sports and recreation.
+                        </p>
+                    </div>
+                    
+                    <div class="img-content">
+                        <img src="festival.jpg" width="100%" alt="img4">
+                        <p>
+                            Traditional summer festivals provide an opportunity to witness local culture firsthand. 
+                            Towns across the country present one-of-a-kind celebrations featuring traditional mikoshi floats, dancing, costumes, and ample amounts of food and drink. 
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="content">
+
+                <div class="country-name">
+                    <h2>Korea</h2>
+                </div>
+
+                <div class="country-content">
+                    <p>
+                        The first half of summer in Korea is hot and humid, with high chances of rain. 
+                        Rainy season runs from mid June to late July. However, it’s not always raining, but there is a high chance of it. 
+                        Evenings are cooler, but still warm.
+                    </p>
+                </div>
+
+                <div class="country-img">
+                    
+                    <div class="img-content">
+                        <img src="koreaBeach.jpg" width="100%" alt="img1">
+                        <p>
+                            Without a doubt, this has to be the best of all summer activities in Korea. 
+                            Grab your swimwear and suncream, find a spot on the sandy shore, and sleep.
+                            Try out some beach sports and other activities to work up a sweat. 
+                        </p>
+                    </div>
+                    
+                    <div class="img-content">
+                        <img src="mudFest.jpg" width="100%" alt="img2">
+                        <p>
+                            Summer is one of the best times to get out and join a festival.
+                            The <b>Boryeong Mud Festival</b> has mud wrestling, mud bathing, extreme mud sports, K-pop concerts, fireworks, a water park, and lots of great beachside restaurants. 
+                        </p>
+                    </div>
+
+                    <div class="img-content">
+                        <img src="fotressWalk.jpg" width="100%" alt="img3">
+                        <p>
+                            Once the sun goes down, the weather cools a lot and it’s the perfect time to explore more. 
+                            You can join the fortress walls in many places throughout Seoul and two of the easiest ones are from <b>Hyehwa Station (Naksan Park)</b> or <b>Dongdameun Station (Heunginjimin Gate)</b>.
+                        </p>
+                    </div>
+                    
+                    <div class="img-content">
+                        <img src="river.jpg" width="100%" alt="img4">
+                        <p>
+                            The <b>Han River</b> is the perfect place for summer activities in Korea, both day and night. 
+                            During the day it’s a great place to see local Seoulites enjoying a picnic on the grass, riding, skating, swimming, and generally relaxing.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="content">
+
+                <div class="country-name">
+                    <h2>Thailand</h2>
+                </div>
+
+                <div class="country-content">
+                    <p>
+                        Thailand has a great number of destinations to visit in summer that you should never miss. 
+                        From the amazing islands, magnificent coastlines to the impressive events and festivals.
+                        Thailand in summer has everything you need for entertaining, relaxing and experiencing.
+                    </p>
+                </div>
+
+                <div class="country-img">
+                    
+                    <div class="img-content">
+                        <img src="bridge.jpg" width="100%" alt="img1">
+                        <p>
+                            <b>Kwai River Bridge</b> is a famous cultural destination in Thailand. 
+                            Built by prisoners of war, this bridge is now a memorial for died forced labourers.
+
+                        </p>
+                    </div>
+                    
+                    <div class="img-content">
+                        <img src="forestThai.jpg" width="100%" alt="img2">
+                        <p>
+                            <b>Khao Yai</b> is the third-largest national park in Thailand which is most suitable for independent visitors. 
+                            The mix of jungles, waterfalls and rivers has made it a perfect destination for visitors to explore nature.
+                        </p>
+                    </div>
+
+                    <div class="img-content">
+                        <img src="sukhothai.jpg" width="100%" alt="img3">
+                        <p>
+                            <b>Sukhothai</b> is known as the first capital of Siam. 
+                            As one of the most attractive archaeological destinations in Thailand, Sukhothai attracts many tourists annually for its splendid old town.
+                        </p>
+                    </div>
+                    
+                    <div class="img-content">
+                        <img src="festivalThai.jpg" width="100%" alt="img4">
+                        <p>
+                            <b>Phi Ta Khon</b> which is known as Ghost Festival, this festival is held in Dan Sai Town on the weekend of the lunar calendar’s 6th full moon. 
+                            At Phi Ta Khon Festival, you can experience the vibe of a religious festival in Thailand. 
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="content">
+
+                <div class="country-name">
+                    <h2>Malaysia</h2>
+                </div>
+
+                <div class="country-content">
+                    <p>
+                        The hot and humid weather is especially apparent around June to August, making it an excellent time to pack up your travel gears and start your wonderful journey of discovery.
+                    </p>
+                </div>
+
+                <div class="country-img">
+                    
+                    <div class="img-content">
+                        <img src="sipadanIsland.png" width="100%" alt="img1">
+                        <p>
+                            <b>Sipadan Island</b> is surrounded by white sandy beaches and some of the most diverse reefs and marine life.
+                            <b>Sipadan Island</b> ranked as one of the top diving destinations of the world
+                        </p>
+                    </div>
+                    
+                    <div class="img-content">
+                        <img src="forest.jpg" width="100%" alt="img2">
+                        <p>
+                            <b>Taman Negara</b> which is the 130-million-year-old virgin rainforest is one of world’s oldest and has grown into a significant eco-tourism attraction in Malaysia. 
+                        </p>
+                    </div>
+
+                    <div class="img-content">
+                        <img src="genting.jpg" width="100%" alt="img3">
+                        <p>
+                            Escape the summer heat at one of the highlands located outside of Kuala Lumpur. 
+                            <b>Genting Highlands</b> is home to hotels, casinos, shopping malls, as well as an indoor and outdoor theme park.
+                        </p>
+                    </div>
+                    
+                    <div class="img-content">
+                        <img src="kk.jpg" width="100%" alt="img4">
+                        <p>
+                            <b>Mount Kinabalu</b> is the highest mountain in Malaysia, located in Sabah. 
+                            The mountain stands at a humongous height of 4,101 m and is the most accessible mountain in the world.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="content">
+
+                <div class="country-name">
+                    <h2>China</h2>
+                </div>
+
+                <div class="country-content">
+                    <p>
+                        Summer in China is from June to August, featuring hot and wet weather. 
+                        Located in the northern hemisphere, China gets the most direct solar radiation on June 22nd, making China one of the hottest countries in the world.
+                    </p>
+                </div>
+
+                <div class="country-img">
+                    
+                    <div class="img-content">
+                        <img src="yunnan.jpg" width="100%" alt="img1">
+                        <p>
+                            <b>Yunnan</b> is an ideal destination for a summer trip in China. 
+                            Owing to its 2,000-meter-altitude with abundant heat and light, Yunnan has a year-round spring-like climate. 
+                        </p>
+                    </div>
+                    
+                    <div class="img-content">
+                        <img src="panda.jpg" width="100%" alt="img2">
+                        <p>
+                            <b>Chengdu</b> is a city of pandas. The lovely giant pandas are the No. 1 reason that people visit Chengdu. 
+                            
+                        </p>
+                    </div>
+
+                    <div class="img-content">
+                        <img src="guilin.jpg" width="100%" alt="img3">
+                        <p>
+                            <b>Guilin</b> is famous for its marvelous limestone scenery. It's a city sitting amid karst mountains. 
+                            The picturesque Li River takes you into a misty Chinese brush painting.
+                        </p>
+                    </div>
+                    
+                    <div class="img-content">
+                        <img src="zhangjiajie.jpg" width="100%" alt="img4">
+                        <p>
+                            <b >Zhangjiajie</b> features fabulous mountainous scenery. 
+                            It is a natural summer resort and has China's first national forest park.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="content">
+
+                <div class="country-name">
+                    <h2>Indonesia</h2>
+                </div>
+
+                <div class="country-content">
+                    <p>
+                        Indonesia is home to a unique culture and breathtaking landscapes. 
+                        Summer months here are characterized by warm temperatures and low precipitation when compared to the wet season.
+                    </p>
+                </div>
+
+                <div class="country-img">
+                    
+                    <div class="img-content">
+                        <img src="borobudur.jpg" width="100%" alt="img1">
+                        <p>
+                            The <b>Borobudur Temple</b> is the ideal place to experience the country's spiritual heritage and history.
+                            The temple is decorated with 504 Buddha statues and is home to some of the world's most complex stone carvings.
+                        </p>
+                    </div>
+                    
+                    <div class="img-content">
+                        <img src="ubud.jpg" width="100%" alt="img2">
+                        <p>
+                            Visiting the <b>Sacred Monkey Forest Sanctuary</b> in Ubud, Bali, is one of the many unique things to do in Indonesia in summer. 
+                            The forest is home to more than a thousand Balinese macaque monkeys as well as three temples.
+                        </p>
+                    </div>
+
+                    <div class="img-content">
+                        <img src="komodo.jpg" width="100%" alt="img3">
+                        <p>
+                            The <b>Komodo National Park</b> is home to the world's largest lizard, known as the Komodo Dragon. 
+                            The park is one of the best places to see the Komodo Dragon, attracting tourists who wish to witness this amazing creature.
+                        </p>
+                    </div>
+                    
+                    <div class="img-content">
+                        <img src="gili.jpg" width="100%" alt="img4">
+                        <p>
+                            Exploring the <b>Gili Islands</b> is one way to get away from the crowds and experience a quiet summer vacation in Indonesia.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <footer>
+            <div class="footer-text">
+                &copy: 2024 Personal Travel Blog. All rights reserved
+            </div>
+        </footer>
+
+        <script>
+            // Get all elements with the class 'img-content'
+            var imgContents = document.querySelectorAll('.img-content');
+
+            // Add event listeners to each 'img-content' element
+            imgContents.forEach(function (imgContent) {
+
+                // Add 'mouseover' event listener
+                imgContent.addEventListener('mouseover', function () {
+
+                    // Add 'bigger' class on mouseover
+                    imgContent.classList.add('bigger');
+                    });
+
+                    // Add 'mouseout' event listener
+                    imgContent.addEventListener('mouseout', function () {
+
+                        // Remove 'bigger' class on mouseout
+                        imgContent.classList.remove('bigger');
+                    });
+            });
+
+        </script>
+
+    </body>
+</html>
